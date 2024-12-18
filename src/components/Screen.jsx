@@ -57,7 +57,7 @@ function Screen() {
   };
 
   useEffect(() => {
-    socketRef.current = io('ws://localhost:3000');
+    socketRef.current = io('wss://web-back-1.onrender.com/');
     const socket = socketRef.current;
 
     const attachLocalStream = async () => {
