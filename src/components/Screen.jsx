@@ -9,7 +9,7 @@ function Screen() {
   const localStream = useRef(null);
 
   const { roomId } = useContext(ModalContext);
-  const [remoteStreams, setRemoteStreams] = useState([]); // Array to store remote streams
+  const [remoteStreams, setRemoteStreams] = useState([]); // Array to store remote streamss
 
   const constraints = {
     audio: true,
