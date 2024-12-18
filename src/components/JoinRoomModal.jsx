@@ -16,7 +16,7 @@ function JoinRoomModal() {
     const handleJoin = async () => {
         try {
             if(inputValue) {
-            const response = await axios.get(`http://localhost:3000/checkroom/${inputValue}`);
+            const response = await axios.get(`https://web-back-1.onrender.com/checkroom/${inputValue}`);
 
             if (response.data.exists) {
                 console.log('Room ID successfully found:', inputValue);
