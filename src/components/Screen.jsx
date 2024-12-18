@@ -19,7 +19,7 @@ function Screen() {
   const createPeerConnection = (socketId) => {
     const peerConnection = new RTCPeerConnection();
 
-    // Add local tracks to the peer connection
+    // Add local tracks to the peer connections
     localStream.current.getTracks().forEach((track) => {
       peerConnection.addTrack(track, localStream.current);
     });
